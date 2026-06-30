@@ -55,6 +55,24 @@ export function renderSidebar() {
   sidebar.innerHTML =
     '<div class="sidebar-section"><div class="sidebar-section-title">工具</div>' + toolHtml + "</div>" +
     '<div class="sidebar-section" style="margin-top:auto;border-top:1px solid var(--border);padding-top:8px">' + bottomHtml + "</div>"
+  sidebar.innerHTML =
+    '<div class="sidebar-section">' +
+    '<div class="sidebar-search"><input type="text" id="tool-search" class="tool-input" placeholder="搜索工具..." style="font-size:12px;padding:6px 8px;margin-bottom:6px;width:100%;box-sizing:border-box"></div>' +
+    '<div class="sidebar-section-title">工具</div>' + toolHtml + "</div>" +
+    '<div class="sidebar-section" style="margin-top:auto;border-top:1px solid var(--border);padding-top:8px">' + bottomHtml + "</div>"
+
+  // Tool search filter
+  function filterTools(query) {
+    query = query.toLowerCase()
+    sidebar.querySelectorAll(".sidebar-item[data-tool]").forEach(function(el) {
+      el.style.display = (!query || el.textContent.toLowerCase().indexOf(query) !== -1) ? "" : "none"
+    })
+  }
+  sidebar.addEventListener("input", function(e) {
+    if (e.target.id === "tool-search") filterTools(e.target.value)
+  })
+
+
   // Bind donate click via event delegation
   sidebar.addEventListener("click", function(e) {
     var target = e.target.closest("#donate-btn")
