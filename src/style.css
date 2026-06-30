@@ -644,3 +644,5 @@ body {
 .http-redir { color: #f59e0b }
 .http-err { color: #ef4444 }
 .http-item:hover { opacity: 0.85 }
+.sidebar-search { padding: 0 4px 4px }
+.sidebar-search input { width: 100%; box-sizing: border-box }

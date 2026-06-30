@@ -10,11 +10,10 @@ export function renderFooter() {
     "</div>",
     '<div class="footer-text">DevBox - 免费在线开发者工具箱 | 所有工具在浏览器本地运行</div>',
     '<div class="footer-recs" style="font-size:11px;color:var(--text-muted);margin-top:6px">',
-    '  推荐: <a href="https://www.digitalocean.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">DigitalOcean</a> · <a href="https://vercel.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">Vercel</a> · <a href="https://www.namecheap.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">Namecheap</a>',
+    '  推荐: <a href="https://www.aliyun.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">阿里云</a> · <a href="https://cloud.tencent.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">腾讯云</a> · <a href="https://www.digitalocean.com/" target="_blank" rel="noopener" style="color:var(--text-muted)">DigitalOcean</a>',
     "</div>"
   ].join("\n")
 
-  // Bind share click
   setTimeout(function() {
     var shareBtn = document.querySelector(".footer-share")
     if (shareBtn) shareBtn.addEventListener("click", showShareModal)
@@ -23,7 +22,7 @@ export function renderFooter() {
 
 function showShareModal() {
   var url = encodeURIComponent("https://kaiypro.github.io/devbox/")
-  var text = encodeURIComponent("DevBox - 免费在线开发者工具箱，21个实用工具，推荐给开发者！")
+  var text = encodeURIComponent("DevBox - 免费在线开发者工具箱，27个实用工具，推荐给开发者！")
   var overlay = document.createElement("div")
   overlay.className = "donate-modal-overlay"
   overlay.innerHTML =
