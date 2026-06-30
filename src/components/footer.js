@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Footer component
  */
 export function renderFooter() {
@@ -30,7 +30,9 @@ function showShareModal() {
     '<button class="donate-close" id="share-close">&times;</button>' +
     '<h3 style="margin:0 0 12px 0">分享 DevBox</h3>' +
     '<div style="display:flex;flex-direction:column;gap:8px">' +
-    '  <a class="btn btn-primary" href="https://twitter.com/intent/tweet?text=' + text + '&url=' + url + '" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">🐦 分享到 Twitter / X</a>' +
+    '  <a class="btn btn-primary" href="https://twitter.com/intent/tweet?text=' + text + '&url=' + url + '" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">🐦 Twitter / X</a>' +
+    '  <a class="btn" href="https://service.weibo.com/share/share.php?url=' + url + '&title=' + text + '" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">🇨🇳 微博</a>' +
+    '  <button class="btn" id="share-wechat" style="cursor:pointer">💬 微信</button>' +
     '  <button class="btn" id="share-copy" style="cursor:pointer">📋 复制链接</button>' +
     "</div>" +
     "</div>"
@@ -42,6 +44,14 @@ function showShareModal() {
       await navigator.clipboard.writeText("https://kaiypro.github.io/devbox/")
       this.textContent = "✅ 已复制！"
       setTimeout(function() { this.textContent = "📋 复制链接" }.bind(this), 2000)
+    } catch (e) { alert("复制失败，请手动复制") }
+  })
+  document.getElementById("share-wechat").addEventListener("click", async function() {
+    var msg = "DevBox - 免费在线开发者工具箱 🧰\n27 个实用工具，全浏览器本地运行，不上传任何数据。\n\n👉 https://kaiypro.github.io/devbox/"
+    try {
+      await navigator.clipboard.writeText(msg)
+      this.textContent = "✅ 文案已复制，去微信粘贴发送！"
+      setTimeout(function() { this.textContent = "💬 微信" }.bind(this), 3000)
     } catch (e) { alert("复制失败，请手动复制") }
   })
 }
