@@ -27,6 +27,12 @@ import * as csvJson from "./tools/csv-json.js"
 import * as uaParser from "./tools/ua-parser.js"
 import * as textCounter from "./tools/text-counter.js"
 import * as cssMinifier from "./tools/css-minifier.js"
+import * as htmlPreview from "./tools/html-preview.js"
+import * as sqlFormatter from "./tools/sql-formatter.js"
+import * as xmlFormatter from "./tools/xml-formatter.js"
+import * as httpStatus from "./tools/http-status.js"
+import * as lineTools from "./tools/line-tools.js"
+import * as cssGradient from "./tools/css-gradient.js"
 
 renderHeader()
 renderSidebar()
@@ -56,6 +62,12 @@ router
   .register("ua-parser", uaParser)
   .register("text-counter", textCounter)
   .register("css-minifier", cssMinifier)
+  .register("html-preview", htmlPreview)
+  .register("sql-formatter", sqlFormatter)
+  .register("xml-formatter", xmlFormatter)
+  .register("http-status", httpStatus)
+  .register("line-tools", lineTools)
+  .register("css-gradient", cssGradient)
 
 setupHeader(router)
 router.start()

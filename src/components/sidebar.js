@@ -23,6 +23,12 @@ var TOOLS = [
   { id: "ua-parser", icon: "🌐", label: "UA 解析" },
   { id: "text-counter", icon: "∑", label: "文本统计" },
   { id: "css-minifier", icon: "✂", label: "CSS 压缩" },
+  { id: "html-preview", icon: "▶", label: "HTML 预览" },
+  { id: "sql-formatter", icon: "SQL", label: "SQL 格式化" },
+  { id: "xml-formatter", icon: "&lt;/&gt;", label: "XML 格式化" },
+  { id: "http-status", icon: "🌐", label: "HTTP 状态码" },
+  { id: "line-tools", icon: "≡", label: "行处理工具" },
+  { id: "css-gradient", icon: "🎨", label: "渐变生成器" },
 ]
 
 var BOTTOM_LINKS = [

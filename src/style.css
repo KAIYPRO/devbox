@@ -639,3 +639,8 @@ body {
 }
 /* Footer share */
 .footer-share { cursor: pointer; }
+/* HTTP Status */
+.http-ok { color: #22c55e }
+.http-redir { color: #f59e0b }
+.http-err { color: #ef4444 }
+.http-item:hover { opacity: 0.85 }
