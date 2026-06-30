@@ -91,8 +91,8 @@ export function showDonateModal() {
     '<h3 style="margin:0 0 12px 0">支持 DevBox 开发</h3>' +
     '<p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px">如果 DevBox 对你有帮助，请开发者喝杯咖啡 ☕</p>' +
     '<div class="donate-qr-placeholder">' +
-    '  <div class="donate-qr-box"><div class="donate-qr-img" style="background:#e8e8e8;width:150px;height:150px;margin:0 auto;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#999">微信收款码<br>(在此放置)</div></div>' +
-    '  <div class="donate-qr-box"><div class="donate-qr-img" style="background:#e8e8e8;width:150px;height:150px;margin:0 auto;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#999">支付宝收款码<br>(在此放置)</div></div>' +
+    '  <div class="donate-qr-box"><img src="./wechat-pay.png" style="width:150px;height:150px;border-radius:8px;display:block" alt="微信收款码"></div>' +
+    '  <div class="donate-qr-box"><img src="./alipay.jpg" style="width:150px;height:150px;border-radius:8px;display:block" alt="支付宝收款码"></div>' +
     '</div>' +
     '<p style="font-size:11px;color:var(--text-muted);margin-top:12px">你的支持让这个工具箱变得更好 ❤️</p>' +
     '</div>'
