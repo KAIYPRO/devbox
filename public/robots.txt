@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://kaiypro.github.io/devbox/sitemap.xml
