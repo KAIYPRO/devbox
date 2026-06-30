@@ -1,0 +1,16 @@
+{
+  "name": "DevBox - 开发者工具箱",
+  "short_name": "DevBox",
+  "description": "免费在线开发者工具集",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
