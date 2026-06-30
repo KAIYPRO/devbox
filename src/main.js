@@ -21,6 +21,12 @@ import * as numberBase from "./tools/number-base.js"
 import * as stringCase from "./tools/string-case.js"
 import * as jwtDecoder from "./tools/jwt-decoder.js"
 import * as loremIpsum from "./tools/lorem-ipsum.js"
+import * as imgBase64 from "./tools/img-base64.js"
+import * as slugGenerator from "./tools/slug-generator.js"
+import * as csvJson from "./tools/csv-json.js"
+import * as uaParser from "./tools/ua-parser.js"
+import * as textCounter from "./tools/text-counter.js"
+import * as cssMinifier from "./tools/css-minifier.js"
 
 renderHeader()
 renderSidebar()
@@ -44,6 +50,12 @@ router
   .register("string-case", stringCase)
   .register("jwt-decoder", jwtDecoder)
   .register("lorem-ipsum", loremIpsum)
+  .register("img-base64", imgBase64)
+  .register("slug-generator", slugGenerator)
+  .register("csv-json", csvJson)
+  .register("ua-parser", uaParser)
+  .register("text-counter", textCounter)
+  .register("css-minifier", cssMinifier)
 
 setupHeader(router)
 router.start()

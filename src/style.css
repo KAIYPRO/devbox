@@ -599,3 +599,41 @@ body {
 .output-wrapper {
   position: relative;
 }
+/* Donate Modal */
+.donate-modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+.donate-modal {
+  background: var(--bg-secondary); border-radius: var(--radius-lg);
+  padding: 32px; max-width: 420px; width: 90%;
+  position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  text-align: center;
+}
+.donate-close {
+  position: absolute; top: 8px; right: 12px;
+  background: none; border: none; font-size: 24px; cursor: pointer;
+  color: var(--text-muted);
+}
+.donate-close:hover { color: var(--text-primary) }
+.donate-qr-placeholder {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+}
+.donate-qr-box {
+  text-align: center;
+}
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+/* Text Counter */
+.tc-stat {
+  background: var(--bg-tertiary); border-radius: var(--radius);
+  padding: 12px; text-align: center;
+}
+.tc-stat-val {
+  display: block; font-size: 24px; font-weight: 700;
+  color: var(--accent); line-height: 1.2;
+}
+.tc-stat-lbl {
+  display: block; font-size: 11px; color: var(--text-muted); margin-top: 4px;
+}
