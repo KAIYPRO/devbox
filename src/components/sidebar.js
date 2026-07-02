@@ -15,7 +15,7 @@ var TOOLS = [
   { id: "html-entity", icon: "&lt;", label: "HTML 实体编解码" },
   { id: "number-base", icon: "0x", label: "进制转换" },
   { id: "string-case", icon: "Aa", label: "字符串格式转换" },
-  { id: "jwt-decoder", icon: "JWT", label: "JWT 解码器" },
+  { id: "jwt-decoder", icon: "🔐", label: "JWT 解码器" },
   { id: "lorem-ipsum", icon: "¶", label: "Lorem Ipsum" },
   { id: "img-base64", icon: "🖼", label: "图片转 Base64" },
   { id: "slug-generator", icon: "🔤", label: "URL Slug" },
