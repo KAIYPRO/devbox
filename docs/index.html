@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DevBox - å…è´¹åœ¨çº¿å¼€å‘è€…å·¥å…·ç®±ï¼Œ27 ä¸ªå®žç”¨å·¥å…·ï¼šJSON æ ¼å¼åŒ–ã€Base64 ç¼–è§£ç ã€URL ç¼–è§£ç ã€å“ˆå¸Œç”Ÿæˆã€UUID ç”Ÿæˆã€å¯†ç ç”Ÿæˆã€HTML é¢„è§ˆã€SQL æ ¼å¼åŒ–ã€æ­£åˆ™æµ‹è¯•ã€æ–‡æœ¬å·®å¼‚ã€é¢œè‰²è½¬æ¢ã€JWT è§£ç ç­‰ã€‚" />
-  <meta name="keywords" content="å¼€å‘è€…å·¥å…·,åœ¨çº¿å·¥å…·,JSONæ ¼å¼åŒ–,æ—¶é—´æˆ³è½¬æ¢,Base64,URLç¼–ç ,æ­£åˆ™æµ‹è¯•,æ–‡æœ¬å·®å¼‚,é¢œè‰²è½¬æ¢,UUIDç”Ÿæˆ,å¯†ç ç”Ÿæˆå™¨,å“ˆå¸Œè®¡ç®—,HTMLå®žä½“,è¿›åˆ¶è½¬æ¢,JWTè§£ç ,å­—ç¬¦ä¸²è½¬æ¢,HTMLé¢„è§ˆ,SQLæ ¼å¼åŒ–,XMLæ ¼å¼åŒ–,HTTPçŠ¶æ€ç ,è¡Œå¤„ç†,æ¸å˜ç”Ÿæˆ,CSV/JSON,å›¾ç‰‡è½¬Base64,UAè§£æž,æ–‡æœ¬ç»Ÿè®¡,CSSåŽ‹ç¼©,Slugç”Ÿæˆ" />
+  <meta name="description" content="DevBox - Ã¥â€¦ÂÃ¨Â´Â¹Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã§Â®Â±Ã¯Â¼Å’27 Ã¤Â¸ÂªÃ¥Â®Å¾Ã§â€Â¨Ã¥Â·Â¥Ã¥â€¦Â·Ã¯Â¼Å¡JSON Ã¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“Ã£â‚¬ÂBase64 Ã§Â¼â€“Ã¨Â§Â£Ã§Â ÂÃ£â‚¬ÂURL Ã§Â¼â€“Ã¨Â§Â£Ã§Â ÂÃ£â‚¬ÂÃ¥â€œË†Ã¥Â¸Å’Ã§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂUUID Ã§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂÃ¥Â¯â€ Ã§Â ÂÃ§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂHTML Ã©Â¢â€žÃ¨Â§Ë†Ã£â‚¬ÂSQL Ã¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“Ã£â‚¬ÂÃ¦Â­Â£Ã¥Ë†â„¢Ã¦Âµâ€¹Ã¨Â¯â€¢Ã£â‚¬ÂÃ¦â€“â€¡Ã¦Å“Â¬Ã¥Â·Â®Ã¥Â¼â€šÃ£â‚¬ÂÃ©Â¢Å“Ã¨â€°Â²Ã¨Â½Â¬Ã¦ÂÂ¢Ã£â‚¬ÂJWT Ã¨Â§Â£Ã§Â ÂÃ§Â­â€°Ã£â‚¬â€š" />
+  <meta name="keywords" content="Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·,Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â·Â¥Ã¥â€¦Â·,JSONÃ¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“,Ã¦â€”Â¶Ã©â€”Â´Ã¦Ë†Â³Ã¨Â½Â¬Ã¦ÂÂ¢,Base64,URLÃ§Â¼â€“Ã§Â Â,Ã¦Â­Â£Ã¥Ë†â„¢Ã¦Âµâ€¹Ã¨Â¯â€¢,Ã¦â€“â€¡Ã¦Å“Â¬Ã¥Â·Â®Ã¥Â¼â€š,Ã©Â¢Å“Ã¨â€°Â²Ã¨Â½Â¬Ã¦ÂÂ¢,UUIDÃ§â€Å¸Ã¦Ë†Â,Ã¥Â¯â€ Ã§Â ÂÃ§â€Å¸Ã¦Ë†ÂÃ¥â„¢Â¨,Ã¥â€œË†Ã¥Â¸Å’Ã¨Â®Â¡Ã§Â®â€”,HTMLÃ¥Â®Å¾Ã¤Â½â€œ,Ã¨Â¿â€ºÃ¥Ë†Â¶Ã¨Â½Â¬Ã¦ÂÂ¢,JWTÃ¨Â§Â£Ã§Â Â,Ã¥Â­â€”Ã§Â¬Â¦Ã¤Â¸Â²Ã¨Â½Â¬Ã¦ÂÂ¢,HTMLÃ©Â¢â€žÃ¨Â§Ë†,SQLÃ¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“,XMLÃ¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“,HTTPÃ§Å Â¶Ã¦â‚¬ÂÃ§Â Â,Ã¨Â¡Å’Ã¥Â¤â€žÃ§Ââ€ ,Ã¦Â¸ÂÃ¥ÂËœÃ§â€Å¸Ã¦Ë†Â,CSV/JSON,Ã¥â€ºÂ¾Ã§â€°â€¡Ã¨Â½Â¬Base64,UAÃ¨Â§Â£Ã¦Å¾Â,Ã¦â€“â€¡Ã¦Å“Â¬Ã§Â»Å¸Ã¨Â®Â¡,CSSÃ¥Å½â€¹Ã§Â¼Â©,SlugÃ§â€Å¸Ã¦Ë†Â" />
   <meta name="theme-color" content="#6366f1" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="KAIYPRO" />
-  <meta property="og:title" content="DevBox - å…è´¹åœ¨çº¿å¼€å‘è€…å·¥å…·ç®±" />
-  <meta property="og:description" content="27 ä¸ªå…è´¹åœ¨çº¿å¼€å‘è€…å·¥å…·ï¼šJSON æ ¼å¼åŒ–ã€Base64 ç¼–è§£ç ã€URL ç¼–è§£ç ã€å“ˆå¸Œç”Ÿæˆã€UUID ç”Ÿæˆã€å¯†ç ç”Ÿæˆã€HTML é¢„è§ˆã€SQL æ ¼å¼åŒ–ç­‰ã€‚" />
+  <meta property="og:title" content="DevBox - Ã¥â€¦ÂÃ¨Â´Â¹Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã§Â®Â±" />
+  <meta property="og:description" content="27 Ã¤Â¸ÂªÃ¥â€¦ÂÃ¨Â´Â¹Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã¯Â¼Å¡JSON Ã¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“Ã£â‚¬ÂBase64 Ã§Â¼â€“Ã¨Â§Â£Ã§Â ÂÃ£â‚¬ÂURL Ã§Â¼â€“Ã¨Â§Â£Ã§Â ÂÃ£â‚¬ÂÃ¥â€œË†Ã¥Â¸Å’Ã§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂUUID Ã§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂÃ¥Â¯â€ Ã§Â ÂÃ§â€Å¸Ã¦Ë†ÂÃ£â‚¬ÂHTML Ã©Â¢â€žÃ¨Â§Ë†Ã£â‚¬ÂSQL Ã¦Â Â¼Ã¥Â¼ÂÃ¥Å’â€“Ã§Â­â€°Ã£â‚¬â€š" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kaiypro.github.io/devbox/" />
   <meta property="og:image" content="https://kaiypro.github.io/devbox/og-image.svg" />
   <meta property="og:image:width" content="256" />
   <meta property="og:image:height" content="256" />
-  <meta name="google-site-verification" content="google721d217f4e229ade" />
-<title>DevBox - åœ¨çº¿å¼€å‘è€…å·¥å…·ç®±ï¼ˆ27 ä¸ªå·¥å…·ï¼‰</title>
-  <!-- Google Analytics (æ›¿æ¢ä¸ºä½ çš„ ID åŽå–æ¶ˆæ³¨é‡Š) -->
+  <meta name="google-site-verification" content="OU2UCKuBDX4enYQlh21q5CgxvyLIg4Tq_bwHKJGzeKs" />
+<title>DevBox - Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã§Â®Â±Ã¯Â¼Ë†27 Ã¤Â¸ÂªÃ¥Â·Â¥Ã¥â€¦Â·Ã¯Â¼â€°</title>
+  <!-- Google Analytics (Ã¦â€ºÂ¿Ã¦ÂÂ¢Ã¤Â¸ÂºÃ¤Â½Â Ã§Å¡â€ž ID Ã¥ÂÅ½Ã¥Ââ€“Ã¦Â¶Ë†Ã¦Â³Â¨Ã©â€¡Å ) -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXX');</script>
@@ -37,16 +37,16 @@
       <main id="content">
         <div class="tool-page">
           <div class="tool-header">
-            <h1 class="tool-title">DevBox å¼€å‘è€…å·¥å…·ç®±</h1>
-            <p class="tool-desc">ä»Žå·¦ä¾§é€‰æ‹©å·¥å…·å¼€å§‹ä½¿ç”¨ã€‚æ‰€æœ‰å·¥å…·å‡åœ¨æµè§ˆå™¨æœ¬åœ°è¿è¡Œï¼Œæ•°æ®ä¸ä¼šä¸Šä¼ åˆ°æœåŠ¡å™¨ã€‚</p>
+            <h1 class="tool-title">DevBox Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã§Â®Â±</h1>
+            <p class="tool-desc">Ã¤Â»Å½Ã¥Â·Â¦Ã¤Â¾Â§Ã©â‚¬â€°Ã¦â€¹Â©Ã¥Â·Â¥Ã¥â€¦Â·Ã¥Â¼â‚¬Ã¥Â§â€¹Ã¤Â½Â¿Ã§â€Â¨Ã£â‚¬â€šÃ¦â€°â‚¬Ã¦Å“â€°Ã¥Â·Â¥Ã¥â€¦Â·Ã¥Ââ€¡Ã¥Å“Â¨Ã¦ÂµÂÃ¨Â§Ë†Ã¥â„¢Â¨Ã¦Å“Â¬Ã¥Å“Â°Ã¨Â¿ÂÃ¨Â¡Å’Ã¯Â¼Å’Ã¦â€¢Â°Ã¦ÂÂ®Ã¤Â¸ÂÃ¤Â¼Å¡Ã¤Â¸Å Ã¤Â¼Â Ã¥Ë†Â°Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã£â‚¬â€š</p>
           </div>
         </div>
       </main>
     </div>
     <footer id="footer">
       <div class="footer-content">
-        <p>DevBox - å…è´¹åœ¨çº¿å¼€å‘è€…å·¥å…·ç®± &copy; 2026</p>
-        <p style="margin-top:4px;font-size:12px;opacity:0.6">å¦‚æžœä½ è§‰å¾—æœ‰ç”¨ï¼Œå¯ä»¥ <a href="https://github.com/KAIYPRO/devbox" target="_blank" rel="noopener">åœ¨ GitHub ä¸Šç»™ Star</a></p>
+        <p>DevBox - Ã¥â€¦ÂÃ¨Â´Â¹Ã¥Å“Â¨Ã§ÂºÂ¿Ã¥Â¼â‚¬Ã¥Ââ€˜Ã¨â‚¬â€¦Ã¥Â·Â¥Ã¥â€¦Â·Ã§Â®Â± &copy; 2026</p>
+        <p style="margin-top:4px;font-size:12px;opacity:0.6">Ã¥Â¦â€šÃ¦Å¾Å“Ã¤Â½Â Ã¨Â§â€°Ã¥Â¾â€”Ã¦Å“â€°Ã§â€Â¨Ã¯Â¼Å’Ã¥ÂÂ¯Ã¤Â»Â¥ <a href="https://github.com/KAIYPRO/devbox" target="_blank" rel="noopener">Ã¥Å“Â¨ GitHub Ã¤Â¸Å Ã§Â»â„¢ Star</a></p>
       </div>
     </footer>
   </div>
